@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mathe Spiel</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container">
+    <div id="start-menu">
+        <h1>Willkommen zum Mathe Spiel</h1>
+        <button onclick="startGame('leicht')">Leicht</button>
+        <button onclick="startGame('mittel')">Mittel</button>
+        <button onclick="startGame('schwer')">Schwer</button>
+    </div>
+    <div id="game-container" style="display: none;">
+        <h1>Mathe Spiel</h1>
+        <div id="question"></div>
+        <input type="text" id="answer" placeholder="Antwort eingeben" onkeydown="checkEnter(event)">
+        <button onclick="checkAnswer()">Antwort überprüfen</button>
+        <div id="result"></div>
+        <div id="score">Punktzahl: 0</div>
+        <div id="lives">Leben: 3</div>
+        <div id="timer">Verbleibende Zeit: 1:00</div>
+        <button class="restart-button" onclick="restartGame()">Neues Spiel starten</button>
+    </div>
+</div>
+
+<footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://www.youtube.com/channel/UCaszlgXMzdhQF7g0jb0MXJA">
+            <img src="./img/logo-youtube.svg" title="Link zum Youtube Kanal" class="footer__social-image" alt="Youtube">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/altundevS" title="Link zum Github Profil">
+            <img src="./img/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        &copy; 2024 - altunDevStudios</a>
+      </p>
+     
+    </div>
+  </footer>
+
+</body>
+</html>
